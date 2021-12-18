@@ -18,12 +18,6 @@ Game::Game(SDL_Rect position, const std::string title)
     renderer = SDL_CreateRenderer(window, -1, SDL_RENDERER_ACCELERATED);
     if(!renderer) 
         throw std::runtime_error("Could not create renderer");
-
-
-
-    SDL_SetRenderDrawColor(renderer, 0, 0, 0, SDL_ALPHA_OPAQUE);
-    SDL_RenderClear(renderer);
-    SDL_RenderPresent(renderer);
 	
 }
 	
