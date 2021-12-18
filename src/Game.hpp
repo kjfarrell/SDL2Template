@@ -16,6 +16,8 @@ public:
 	void run();
 	void processEvents();
 
+	void clearScreen();
+
 private:
 	SDL_Window *window;
 	SDL_Renderer *renderer;
